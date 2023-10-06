@@ -1,0 +1,15 @@
+# dostaneš číslo v dvojkovej a dat ho do desiatkovej susstavy
+#odtrhnes poslednu cifru a ojebeš ju mocninou 2jky a to dookola len sa zvyšuje mocnina
+# ** umocnenie
+#zvysok po delení modulo 10011011
+#vysledkom celočíselneho delenia je int
+
+c = int(input("zadajte číslo: "))
+vysledok = 0
+mocdes = 1
+while c != 0:
+    zvysok = c % 10 
+    vysledok = vysledok + zvysok*mocdes 
+    mocdes = mocdes * 2 
+    c = c // 10 
+print(vysledok)
